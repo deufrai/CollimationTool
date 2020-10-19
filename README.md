@@ -17,11 +17,11 @@ Modules required
  Main program is OptimColim
  
  It will give in a notebook the view of the image channel by channel on separate tabs with ellipses
- around the stars that are retained to make statistical computations on eccentricity and ellipticity that are
- on two more tabs.
+ around the stars that are retained. Statistical computations on eccentricity and ellipticity are done on tose stars and
+ hold in two more tabs.
  The idea is that on the airy spot of a start the point which is the most brillant can be eccentric if the secondary
  is not well aligned. And the image of the star is not round (ellipsoidal or comet like) when the primary is not well
  aligned
  
- As it is now, the tool required long computations so it  is not well adapted for a live collimation procedure. I am looking
+ On its current state, the tool required long computations so it  is very well adapted for a live collimation procedure. I am looking
  for people that could help me to improve drastically the speed of the tool in order to be able to use it in live procedure.
