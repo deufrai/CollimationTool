@@ -1,0 +1,7 @@
+matplotlib
+scipy
+photutils
+astropy
+numpy
+tk
+opencv-python-headless

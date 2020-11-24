@@ -1,11 +1,11 @@
-#!/usr/bin/python3
 import sys
+from tkinter import messagebox, Tk, mainloop
+from tkinter.ttk import Notebook
+
 from fitsimage import _fitsimage
 from graphic import _MyCanvas as mcnv
 from graphic import _MyImage as mimg
-from matplotlib.figure import Figure
-#from tkinter import ttk
-from tkinter import *
+
 
 def on_closing():
 	if messagebox.askokcancel("Quit", "Voulez vous quitter?"):
@@ -15,7 +15,7 @@ def on_closing():
 path = sys.argv[1]
 fit = _fitsimage(path)
 root = Tk()
-notebook = ttk.Notebook(root)
+notebook = Notebook(root)
 
 
 if fit.nchannel == 1:

@@ -3,11 +3,11 @@ from astropy.stats import SigmaClip
 from photutils import Background2D, MedianBackground
 
 from astropy.io import fits
-from photutils.segmentation import detect_sources,  source_properties #,  deblend_sources
+from photutils.segmentation import detect_sources,  source_properties
 import numpy as np
 from enum import Enum
 from photutils import  detect_threshold
-from tkinter import *
+
 import cv2
 
 

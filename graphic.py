@@ -1,18 +1,14 @@
-from MyCanvas import MyCanvas as mcnv
 from scipy.stats import norm
 from astropy.visualization.mpl_normalize import ImageNormalize
 from astropy.visualization import SqrtStretch
 import astropy.units as u
 import numpy as np
 from photutils import EllipticalAperture
-import tkinter as tk
-from tkinter import ttk
-from tkinter import *
-#import matplotlib.pyplot as plt
+from tkinter import ttk, Frame
 from matplotlib.figure import Figure
 from matplotlib.cm import get_cmap
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg,  NavigationToolbar2Tk
-#import matplotlib.backends.backend_tkagg as tkagg
+
 
 class _MyCanvas(Frame):
 	
@@ -107,17 +103,3 @@ class _MyImage(Figure):
 					xi = np.linspace(xmin, xmax, 100)
 					yi = norm.pdf(xi, mean, std)
 					self.axe[i,j].plot(xi, yi, color=color)
-		
-#root = Tk()
-#root.wm_title('test')
-#
-#notebook = ttk.Notebook(root)
-#tab1 = MyCanvas(notebook, 'tab1')
-#fig = MyImage(figsize=(8, 8), dpi=100)
-#print(fig)
-#
-#tab1._add_fig(fig)
-#
-#
-#
-#tk.mainloop()
